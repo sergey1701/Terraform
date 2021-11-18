@@ -4,8 +4,8 @@ provider "aws"{
     region = "eu-central-1"
 }
 
-resource "aws_vps" "Lubuntu" {
-    ami = "ami-0a49b025fffbbdac6"
-    instance_type = "t2.micro"
-  
+resource "aws_instance" "myweb" {
+  ami           = "ami-0a49b025fffbbdac6"
+  instance_type = "t2.micro"
 }
+
