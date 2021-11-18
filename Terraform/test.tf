@@ -4,7 +4,7 @@ provider "aws"{
     region = "eu-central-1"
 }
 
-resource "aws_instance" "Ubuntu" {
+resource "aws_instance" "Lubuntu" {
     ami = "ami-0a49b025fffbbdac6"
     instance_type = "t2.micro"
   
