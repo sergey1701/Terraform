@@ -1,10 +1,11 @@
 provider "aws"{
-    access_key = "AKIA3A77BKJKBLLKVP67"
-    secret_key = "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"
+    access_key = AWS_ACCESS_KEY_ID
+    secret_key = AWS_SECRET_ACCESS_KEY
     region = "us-east-2"
 }
 
 resource "aws_instance" "myweb" {
+  count = 0  
   ami           = "ami-0629230e074c580f2"
   instance_type = "t2.micro"
 }
