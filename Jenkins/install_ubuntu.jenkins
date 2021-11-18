@@ -14,7 +14,7 @@ pipeline{
             echo "=========================statr build resurce======================"
             dir ('Terraform')
             {
-                sh'terraform init && terraform plan && terraform apply'
+                sh'terraform init && terraform plan && terraform apply -auto-approve'
                                   
             }
             }
