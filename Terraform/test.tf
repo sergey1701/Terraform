@@ -1,6 +1,6 @@
 provider "aws"{
-    access_key = $ACCESS_KEY_ID
-    secret_key = $SECRET_KEY
+    access_key = env.ACCESS_KEY_ID
+    secret_key = env.SECRET_KEY
     region = "us-east-2"
 }
 
