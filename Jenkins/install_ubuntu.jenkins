@@ -8,15 +8,11 @@ pipeline{
     }
     
     stages{
-        stage("Create AWS Resource")
+        stage("Test")
         {
             steps{
-            echo "=========================statr build resurce======================"
-            dir ('Terraform')
-            {
-                sh'terraform init && terraform plan && terraform apply -auto-approve'
-                                  
-            }
+            echo "=========================statr Test======================"
+            ssh jenkins@192.168.245.132 
             }
         }
     }        
