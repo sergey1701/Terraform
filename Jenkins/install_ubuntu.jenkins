@@ -12,7 +12,7 @@ pipeline{
         {
             steps{
             echo "=========================statr Test======================"
-            ssh jenkins@192.168.245.132 
+            sh 'ssh jenkins@192.168.245.132' 
             }
         }
     }        
