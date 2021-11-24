@@ -12,7 +12,7 @@ pipeline{
         {
             steps{
             echo "=========================statr Test======================"
-            dir('Docker\Dockerfile'){
+            dir('Docker/Dockerfile'){
             sh 'ssh jenkins@192.168.245.132'
             sh 'docker-compose bild'
             } 
